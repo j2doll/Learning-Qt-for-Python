@@ -1,16 +1,15 @@
+# 11.TextEditor.py
+
 # Import required modules
 import sys, time
-from PySide.QtGui import *
-
+from PySide2.QtGui import *
+from PySide2.QtWidgets import *
 
 # Our main window class
 class MainWindow(QMainWindow):
-    
-    # Constructor function
-    def __init__(self, fileName=None):
+    def __init__(self, fileName=None): # Constructor function
         super(MainWindow,self).__init__()
         self.initGUI()
-
     def initGUI(self):
         self.setWindowTitle("A Simple Text Editor")
         self.setWindowIcon(QIcon('appicon.png'))
@@ -23,9 +22,8 @@ class MainWindow(QMainWindow):
         self.filters = "Text files (*.txt)"
         self.SetupComponents()
         self.show()
-
-    # Function to setup status bar, central widget, menu bar, tool bar
     def SetupComponents(self):
+    	# Function to setup status bar, central widget, menu bar, tool bar
         self.myStatusBar = QStatusBar()
         self.setStatusBar(self.myStatusBar)
         self.myStatusBar.showMessage('Ready', 10000)
