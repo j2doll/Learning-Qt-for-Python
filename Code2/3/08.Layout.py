@@ -1,23 +1,22 @@
+# 08.Layout.py
+
 # Import required modules
 import sys, time
-from PySide.QtGui import *
-from PySide.QtCore import *
+from PySide2.QtGui import *
+from PySide2.QtCore import *
+from PySide2.QtWidgets import *
 
 # Our main window class
 class MainWindow(QWidget):
-    # Constructor function
-    def __init__(self):
+    def __init__(self): # Constructor function
         super(MainWindow,self).__init__()
         self.initGUI()
-
     def initGUI(self):
         self.setWindowTitle("Vertical Layout")
         self.setGeometry(300, 250, 400, 300)
         self.SetLayout()
         self.show()
-
-    # Add Buttons and set the layout
-    def SetLayout(self):
+    def SetLayout(self): # Add Buttons and set the layout
         verticalLayout = QVBoxLayout(self)
         vButton1 = QPushButton('Button 1', self)
         vButton2 = QPushButton('Button 2', self)
@@ -31,7 +30,6 @@ class MainWindow(QWidget):
         verticalLayout.addWidget(vButton4)
         
         self.setLayout(verticalLayout)
-        
         
 if __name__ == '__main__':
     # Exception Handling

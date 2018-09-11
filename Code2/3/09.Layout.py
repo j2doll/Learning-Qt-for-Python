@@ -1,7 +1,10 @@
+# .py 
+
 # Import required modules
 import sys, time
-from PySide.QtGui import *
-from PySide.QtCore import *
+from PySide2.QtGui import *
+from PySide2.QtCore import *
+from PySide2.QtWidgets import *
 
 # Our main window class
 class MainWindow(QWidget):
@@ -9,15 +12,12 @@ class MainWindow(QWidget):
     def __init__(self):
         super(MainWindow,self).__init__()
         self.initGUI()
-
     def initGUI(self):
         self.setWindowTitle("Grid Layout")
         self.setGeometry(300, 250, 400, 300)
         self.SetLayout()
         self.show()
-
-    # Add Buttons and set the layout
-    def SetLayout(self):
+    def SetLayout(self): # Add Buttons and set the layout
         gridLayout = QGridLayout(self)
         gButton1 = QPushButton('Button 1', self)
         gButton2 = QPushButton('Button 2', self)
