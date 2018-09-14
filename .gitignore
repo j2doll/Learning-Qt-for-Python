@@ -49,6 +49,7 @@ CMakeLists.txt.user*
 *.iml
 misc.xml
 modules.xml
+vcs.xml
 
 # thumbnail
 Thumbs.db
