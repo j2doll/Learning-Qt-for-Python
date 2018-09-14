@@ -3,15 +3,18 @@
 
 # Import the necessary modules required
 import sys
+import time
+
 from PySide2.QtCore import *
 from PySide2.QtGui import *
+from PySide2.QtWidgets import *
 
 if __name__ == '__main__': # Main Function
 	# Create the main application
-	myApp = QCoreApplication(sys.argv)
+	myApp = QApplication(sys.argv)
 	# Create a Label and set its properties
 	try:
-		# appLabel = QLabel()
+		# appLabel = QLabel() # appLabel is not defined.
 		appLabel.setText("Hello, World!!!\n Look at my first app using PySide")
 		appLabel.setAlignment(Qt.AlignCenter)
 		appLabel.setWindowTitle("My First Application")

@@ -1,7 +1,8 @@
 # Import necessary modules
 import sys
-from PySide.QtGui import *
-from PySide.QtCore import *
+from PySide2.QtGui import *
+from PySide2.QtCore import *
+from PySide2.QtWidgets import *
 
 # Our main widget class
 class MyWidget(QWidget):
@@ -23,8 +24,8 @@ class MyWidget(QWidget):
         self.setLayout(self.myLayout)
         self.show()
 
-    # Function reimplementing Key Press, Mouse Click and Resize Events
     def keyPressEvent(self, event):
+        # Function reimplementing Key Press, Mouse Click and Resize Events
         if event.key() == Qt.Key_Escape:
             self.close()
 
@@ -34,9 +35,8 @@ class MyWidget(QWidget):
     def resizeEvent(self, event):
         self.infoLabel.setText("Window Resized to QSize(%d, %d)" % (event.size().width(), event.size().height()))
         
-if __name__ =='__main__':
-    # Exception Handling
-    try:
+if __name__ =='__main__': # main function
+    try: # Exception Handling
         myApp = QApplication(sys.argv)
         myWidget = MyWidget()
         myApp.exec_()

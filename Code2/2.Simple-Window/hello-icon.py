@@ -2,7 +2,8 @@
 
 # Import required modules
 import sys
-from PySide2.QtGui import QGuiApplication, QWindow, QIcon
+from PySide2.QtGui import *
+from PySide2.QtWidgets import *
 
 class SampleWindow(QWindow): # Our main window class 
 	def __init__(self): # Constructor Function
@@ -16,7 +17,7 @@ class SampleWindow(QWindow): # Our main window class
 if __name__ == '__main__':
 	# Exception Handling
 	try:
-		myApp = QGuiApplication(sys.argv)
+		myApp = QApplication(sys.argv)
 		myWindow = SampleWindow()
 		myWindow.setIconFile()
 		myWindow.show()
