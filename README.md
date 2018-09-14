@@ -1,6 +1,6 @@
 # Learning-Qt-for-Python
 
-## Code2
+## PSGUIAD
 - Basic PySide code based on PySide GUI Application Development [Loganathan 2013-10-15]
 - I fix some code for PySide2 
 
