@@ -1,7 +1,7 @@
 import sys
-from PySide.QtGui import *
-from PySide.QtCore import *
-from PySide.QtSql import *
+from PySide2.QtGui import *
+from PySide2.QtCore import *
+from PySide2.QtWidgets import *
 
 ID, FIRST_NAME, LAST_NAME, AGE, SEX, INCOME = range(6)
 
