@@ -50,3 +50,5 @@ CMakeLists.txt.user*
 misc.xml
 modules.xml
 
+# thumbnail
+Thumbs.db
