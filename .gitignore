@@ -45,7 +45,8 @@ target_wrapper.*
 CMakeLists.txt.user*
 
 # PyCharm
-.idea
+.idea/
+.idea/*
 *.iml
 misc.xml
 modules.xml
